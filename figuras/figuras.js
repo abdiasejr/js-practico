@@ -1,26 +1,35 @@
+const inputCuadrado = document.getElementById("inputCuadrado");
+
+const inputA = document.getElementById("inputA");
+const inputB = document.getElementById("inputB");
+const inputC = document.getElementById("inputC");
+const inputAltura = document.getElementById("inputAltura")
+
+const inputRadio = document.getElementById("inputRadio");
+
 //Cuadrado
-function perimetroCuadrado(ladoCuadrado){
-    return ladoCuadrado * 4 + `cm`
+function perimetroCuadrado(){
+    return alert(inputCuadrado.value * 4 + `cm`);
 }
 
-function areaCuadrado(ladoCuadrado) {
-    return ladoCuadrado ** 2 + `cm²`
+function areaCuadrado() {
+    return alert(inputCuadrado.value ** 2 + `cm²`);
 }    
 
 //Triángulo
-function perimetroTriangulo(ladoA, ladoB, ladoC) {
-    return ladoA + ladoB + ladoC + `cm`;
+function perimetroTriangulo() {
+    return alert((inputA.value + inputB.value + inputC.value) + `cm`);;
 }
 
-function areaTriangulo(base, altura) {
-    return (base * altura) / 2 + `cm²`;
+function areaTriangulo() {
+    return alert((inputB.value * inputAltura.value) / 2 + `cm²`);
 }
 
 //Círculo
-function perimetroCirculo(radio){
-    return radio * 2 * Math.PI + `cm`;
+function perimetroCirculo(){
+    return alert(inputRadio.value * 2 * Math.PI + `cm`);
 }
 
-function areaCirculo(radio){
-    return radio ** 2  * Math.PI + `cm²`;
+function areaCirculo(){
+    return alert(inputRadio.value ** 2  * Math.PI + `cm²`);
 }
