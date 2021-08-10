@@ -4,7 +4,6 @@ var cupon = document.getElementById("inputCupon");
 var resultado = document.getElementById("resultado");
 
 let cupones = {
-    '': 0,
     '10OFF': 10,
     '15OFF': 15,
     '30OFF': 30,
@@ -15,8 +14,8 @@ let cupones = {
 
 function descuentoProducto(){
 
-    Object.values(cupones).forEach( elemento => {
-        if (cupones[cupon.value] == elemento) {
+    Object.values(cupones).forEach( coupon => {
+        if (cupones[cupon.value] === coupon) {
             descuento.value = Number(descuento.value) + cupones[cupon.value];
         }
     });
