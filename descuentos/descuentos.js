@@ -21,9 +21,9 @@ function descuentoProducto(){
     });
 
     const compra =  precio.value * (100 - descuento.value) / 100;
-    if (compra) {
-        return resultado.innerHTML = `Detalle compra: ${compra}$`; 
-    }  else {
+    if (!compra) {
         return resultado.innerHTML = `Descuento no aplica`;
+    }  else {
+        return resultado.innerHTML = `Detalle compra: ${compra}$`; 
     }
 }
