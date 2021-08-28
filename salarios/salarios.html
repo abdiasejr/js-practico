@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salarios</title>
+</head>
+<body style="font-family: Arial;">
+    <h1>Salarios</h1>
+    <form action="">
+        <label for="title">Registra tu salario!</label>
+        <input id="inputNombre" type="text" placeholder="Satoshi" /> 
+        <input id="inputSalario" type="text" placeholder="1000" /> 
+        <input type="button" value="subir" onclick="registrarSalario()"/>
+    </form>
+    <h2>Lista de Salarios</h2>
+    <div id="content"></div>
+    <input type="button" value="calcular promedio" onclick="calcularPromedio()" />
+    <input type="button" value="calcular mediana" onclick="calcularMediana()"/>
+    <script src="salarios.js"></script>
+</body>
+</html>
